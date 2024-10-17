@@ -1,0 +1,127 @@
+
+@import url('./main.css');
+
+
+#logoDisplay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center; 
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    z-index: 100;
+    animation: appear 0.4s 1 ease;
+    background-color: #f8e9da;
+}
+@keyframes appear {
+    from{
+        opacity: 0.5;
+    }
+    to{
+        opacity: 1;
+    }
+}
+#logoDisplay h1{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: var(--main-txt);
+}
+#logoDisplay p{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    color: gray;
+}
+#start-btn{
+    padding: 3px 4px;
+    background-color: var(--h-bg);
+    font-weight: 900;
+    border-radius: 6px;
+    cursor: pointer;
+}
+main>h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    margin: 10px;
+    color: var(--main-txt);
+} 
+main .container{
+    padding: 9px; 
+}
+main .container div{
+    background-color: var(--h-bg);
+    border-radius: 10px;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    transition: all 0.1s linear;
+}
+main .container h2{
+    font-size: 1rem;
+    width: 88%;
+    padding: 5px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+main .container div:hover{
+    transform: scale(1.01);
+}
+main .container span{
+    font-size: 10px;
+}
+.quranContainer{
+    background-color: var(--quran-bg);
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    font-family: "Amiri Quran", serif;
+    font-weight: 900;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    row-gap: 15px;
+    line-height: 30px;
+}
+.surahinfo{
+    background-color: var(--h-bg);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.state,.ayats{
+    font-size: 1rem;
+    border: 4px solid black;
+    padding: 7px;
+    width: 70px;
+}
+.startsurah{
+    font-size: larger;
+    color: #f8d281;
+    overflow: hidden;
+}
+.state{
+    border-radius: 10px 0 0 10px;
+}
+.ayats{
+    border-radius: 0 10px 10px 0
+}
+.quranContainer .quran{
+    letter-spacing: 1px;
+    color: var(--quran-txt);
+}
