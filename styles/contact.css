@@ -1,0 +1,84 @@
+body{
+    background-color: var(--quran-bg);
+}
+.contactform{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+form{
+    background-color: rgb(241, 179, 43);
+    padding: 20px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 85vw;
+}
+form div{
+    position: relative;
+    overflow: hidden;
+}
+label{
+    position: absolute;
+    left: 53px;
+    font-size: 0.8rem;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: gray;
+    cursor: pointer;
+}
+textarea{
+    resize: none;
+    font-family: popins,Arial, Helvetica, sans-serif;
+    padding: 7px;
+    width: 100%;
+    height: 200px;
+    background-color: var(--quran-bg);
+    color: var(--quran-txt);
+    border: none;
+    border-radius: 4px;
+}
+input,textarea:focus{
+    outline: none;
+}
+form input{
+    padding: 7px;
+    border-radius: 4px;
+    border: none;
+    width: 100%;
+    background-color: var(--quran-bg);
+    color: var(--quran-txt);
+}
+
+form button{
+    padding: 4px;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    overflow: hidden;
+    background-color: rgb(241, 181, 50);
+    text-align: center;
+    border: 0.5px solid rgb(196, 128, 1);
+}
+form button:hover{
+    background-color: rgb(243, 162, 12);
+}
+.info{
+    padding: 20px;
+    margin-top: 10px;
+    font-size: 0.7rem;
+    color: var(--quran-txt);
+}
+
+@media screen and ( min-width: 500px ) {
+    form{
+        width: 50vw;
+    }
+    form input{
+        padding: 10px;
+    }
+}
