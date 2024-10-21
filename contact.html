@@ -18,27 +18,39 @@
                 </span>
             </div>
             <ul class="nav-menu">
-                <li><a href="./index.html">surahs</a></li>
-                <li><a href="search.html">search</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="about.html">about</a></li>
+                <li><a href="./main.html">Surahs</a></li>
+                <li><a href="hadish.html">Hadishs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
             </ul>
+            <div class="menu">
+                <details>
+                    <summary>More</summary>
+                    <div class="options">
+                        <a href="./main.html" id="surahBtn">Surahs</a>
+                        <a href="hadish.html">Hadish</a>
+                        <a href="contact.html">Contact</a>
+                        <a href="about.html">About</a>
+                    </div>
+                </details>
+            </div>
         </nav>
     </header>
     <main>
         <div class="contactform">
-            <h1>Contact Us</h1>
-            <form>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="68a21d50-4996-487f-8ee6-17db05232322">
                 <div class="username">
                     <label for="name">enter your name</label>
                     <input id="name" title="username" name="name" type="text" required autocomplete="off">
                 </div>
                 <div class="email">
                     <label for="email">enter your email</label>
-                    <input id="email" title="useremail" name="email" type="email" required>
+                    <input id="email" title="useremail" name="email" type="text" required>
                 </div>
                 <div class="message">
-                    <textarea name="message" id="message" required></textarea>
+                    <textarea name="message" id="feedback" required></textarea>
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
                 </div>
                 <div class="submit">
                     <button id="submit" title="submit" name="submit" type="submit">Send</button>
@@ -51,7 +63,5 @@
         </div>
     </main>
 </body>
-<script src="./scripts/script.js"></script>
-<script src="./scripts/fetch.js"></script>
 <script src="./scripts/contact.js"></script>
 </html>

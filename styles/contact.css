@@ -17,6 +17,7 @@ form{
     flex-direction: column;
     gap: 10px;
     width: 85vw;
+    margin-top: 30px;
 }
 form div{
     position: relative;

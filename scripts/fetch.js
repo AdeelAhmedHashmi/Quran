@@ -1,3 +1,4 @@
+const main = document.querySelector('main');
 
 let surah = [];
 const html = main.innerHTML;

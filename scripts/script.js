@@ -1,15 +1,17 @@
 //Varibles and Constants
 const well = document.querySelector('#logoDisplay');
-const start = document.querySelector('#start-btn');
+const start = document.querySelector('.start');
 const quranContainer = document.querySelector('.quran');
 const quranSec = document.querySelector('.quranContainer');
-const main = document.querySelector('main');
 const state = document.querySelector('.surahinfo .state');
 const surahName = document.querySelector('.surahinfo .name');
 const totalayats = document.querySelector('.surahinfo .ayats');
+const surahBtn = document.querySelector('#surahBtn');
+
 
 start.addEventListener('click',()=>{
     well.classList.add('hide');
+    document.querySelector('main').classList.remove('hide');
 });
 
 function displayNames(surahs){
