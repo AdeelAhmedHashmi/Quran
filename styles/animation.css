@@ -4,6 +4,9 @@
 .animate1{
     animation: hide 0.5s ease 1;
 }
+.select{
+    border-bottom: 2px solid white;
+}
 @keyframes hide {
     from{
         opacity: 1;

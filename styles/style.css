@@ -40,13 +40,15 @@ main .container span{
     color: white;
     padding: 10px;
     font-size: larger;
-    font-family: "Amiri Quran", serif;
     font-weight: 900;
     display: flex;
     flex-direction: column;
     text-align: center;
     row-gap: 15px;
     line-height: 30px;
+}
+.quran{
+    font-family: "Amiri Quran", serif ;
 }
 .surahinfo{
     background-color: var(--h-bg);
@@ -80,3 +82,57 @@ main .container span{
     letter-spacing: 1px;
     color: var(--quran-txt);
 }
+
+.search{
+    padding: 2px 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.search input{
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    width: 80vw;
+    background-color: #f8d281;
+    outline: 1px solid #c78b08;
+}
+.search button{
+    padding: 6px;
+    border: none;
+    border-radius: 6px;
+    background-color: #027c1d;
+    color: aliceblue;
+    cursor: pointer;
+    outline: 1px solid #f8d281;
+
+}
+.search button:active{
+    scale: 0.9;
+}
+.option{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3px;
+    margin: 15px 8px;
+}
+.option div{
+    font-size: 0.7rem;
+    margin: 2px;
+    width: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #c78b08;
+    color: aliceblue;
+}
+.option div:hover{
+    background-color: #fdba2a;
+}
+ /* <div id="1"><h2>Al-Faatiha (سُورَةُ ٱلْفَاتِحَةِ)</h2><span>1/144</span></div><div id="2"><h2>Al-Baqara (سُورَةُ البَقَرَةِ)</h2><span>2/144</span></div><div id="3"><h2>Aal-i-Imraan (سُورَةُ آلِ عِمۡرَانَ)</h2><span>3/144</span></div><div id="4"><h2>An-Nisaa (سُورَةُ النِّسَاءِ)</h2><span>4/144</span></div><div id="5"><h2>Al-Maaida (سُورَةُ المَائـِدَةِ)</h2><span>5/144</span></div><div id="6"><h2>Al-An'aam (سُورَةُ الأَنۡعَامِ)</h2><span>6/144</span></div><div id="7"><h2>Al-A'raaf (سُورَةُ الأَعۡرَافِ)</h2><span>7/144</span></div><div id="8"><h2>Al-Anfaal (سُورَةُ الأَنفَالِ)</h2><span>8/144</span></div><div id="9"><h2>At-Tawba (سُورَةُ التَّوۡبَةِ)</h2><span>9/144</span></div><div id="10"><h2>Yunus (سُورَةُ يُونُسَ)</h2><span>10/144</span></div><div id="11"><h2>Hud (سُورَةُ هُودٍ)</h2><span>11/144</span></div><div id="12"><h2>Yusuf (سُورَةُ يُوسُفَ)</h2><span>12/144</span></div><div id="13"><h2>Ar-Ra'd (سُورَةُ الرَّعۡدِ)</h2><span>13/144</span></div><div id="14"><h2>Ibrahim (سُورَةُ إِبۡرَاهِيمَ)</h2><span>14/144</span></div><div id="15"><h2>Al-Hijr (سُورَةُ الحِجۡرِ)</h2><span>15/144</span></div><div id="16"><h2>An-Nahl (سُورَةُ النَّحۡلِ)</h2><span>16/144</span></div><div id="17"><h2>Al-Israa (سُورَةُ الإِسۡرَاءِ)</h2><span>17/144</span></div><div id="18"><h2>Al-Kahf (سُورَةُ الكَهۡفِ)</h2><span>18/144</span></div><div id="19"><h2>Maryam (سُورَةُ مَرۡيَمَ)</h2><span>19/144</span></div><div id="20"><h2>Taa-Haa (سُورَةُ طه)</h2><span>20/144</span></div><div id="21"><h2>Al-Anbiyaa (سُورَةُ الأَنبِيَاءِ)</h2><span>21/144</span></div><div id="22"><h2>Al-Hajj (سُورَةُ الحَجِّ)</h2><span>22/144</span></div><div id="23"><h2>Al-Muminoon (سُورَةُ المُؤۡمِنُونَ)</h2><span>23/144</span></div><div id="24"><h2>An-Noor (سُورَةُ النُّورِ)</h2><span>24/144</span></div><div id="25"><h2>Al-Furqaan (سُورَةُ الفُرۡقَانِ)</h2><span>25/144</span></div><div id="26"><h2>Ash-Shu'araa (سُورَةُ الشُّعَرَاءِ)</h2><span>26/144</span></div><div id="27"><h2>An-Naml (سُورَةُ النَّمۡلِ)</h2><span>27/144</span></div><div id="28"><h2>Al-Qasas (سُورَةُ القَصَصِ)</h2><span>28/144</span></div><div id="29"><h2>Al-Ankaboot (سُورَةُ العَنكَبُوتِ)</h2><span>29/144</span></div><div id="30"><h2>Ar-Room (سُورَةُ الرُّومِ)</h2><span>30/144</span></div><div id="31"><h2>Luqman (سُورَةُ لُقۡمَانَ)</h2><span>31/144</span></div><div id="32"><h2>As-Sajda (سُورَةُ السَّجۡدَةِ)</h2><span>32/144</span></div><div id="33"><h2>Al-Ahzaab (سُورَةُ الأَحۡزَابِ)</h2><span>33/144</span></div><div id="34"><h2>Saba (سُورَةُ سَبَإٍ)</h2><span>34/144</span></div><div id="35"><h2>Faatir (سُورَةُ فَاطِرٍ)</h2><span>35/144</span></div><div id="36"><h2>Yaseen (سُورَةُ يسٓ)</h2><span>36/144</span></div><div id="37"><h2>As-Saaffaat (سُورَةُ الصَّافَّاتِ)</h2><span>37/144</span></div><div id="38"><h2>Saad (سُورَةُ صٓ)</h2><span>38/144</span></div><div id="39"><h2>Az-Zumar (سُورَةُ الزُّمَرِ)</h2><span>39/144</span></div><div id="40"><h2>Ghafir (سُورَةُ غَافِرٍ)</h2><span>40/144</span></div><div id="41"><h2>Fussilat (سُورَةُ فُصِّلَتۡ)</h2><span>41/144</span></div><div id="42"><h2>Ash-Shura (سُورَةُ الشُّورَىٰ)</h2><span>42/144</span></div><div id="43"><h2>Az-Zukhruf (سُورَةُ الزُّخۡرُفِ)</h2><span>43/144</span></div><div id="44"><h2>Ad-Dukhaan (سُورَةُ الدُّخَانِ)</h2><span>44/144</span></div><div id="45"><h2>Al-Jaathiya (سُورَةُ الجَاثِيَةِ)</h2><span>45/144</span></div><div id="46"><h2>Al-Ahqaf (سُورَةُ الأَحۡقَافِ)</h2><span>46/144</span></div><div id="47"><h2>Muhammad (سُورَةُ مُحَمَّدٍ)</h2><span>47/144</span></div><div id="48"><h2>Al-Fath (سُورَةُ الفَتۡحِ)</h2><span>48/144</span></div><div id="49"><h2>Al-Hujuraat (سُورَةُ الحُجُرَاتِ)</h2><span>49/144</span></div><div id="50"><h2>Qaaf (سُورَةُ قٓ)</h2><span>50/144</span></div><div id="51"><h2>Adh-Dhaariyat (سُورَةُ الذَّارِيَاتِ)</h2><span>51/144</span></div><div id="52"><h2>At-Tur (سُورَةُ الطُّورِ)</h2><span>52/144</span></div><div id="53"><h2>An-Najm (سُورَةُ النَّجۡمِ)</h2><span>53/144</span></div><div id="54"><h2>Al-Qamar (سُورَةُ القَمَرِ)</h2><span>54/144</span></div><div id="55"><h2>Ar-Rahmaan (سُورَةُ الرَّحۡمَٰن)</h2><span>55/144</span></div><div id="56"><h2>Al-Waaqia (سُورَةُ الوَاقِعَةِ)</h2><span>56/144</span></div><div id="57"><h2>Al-Hadid (سُورَةُ الحَدِيدِ)</h2><span>57/144</span></div><div id="58"><h2>Al-Mujaadila (سُورَةُ المُجَادلَةِ)</h2><span>58/144</span></div><div id="59"><h2>Al-Hashr (سُورَةُ الحَشۡرِ)</h2><span>59/144</span></div><div id="60"><h2>Al-Mumtahana (سُورَةُ المُمۡتَحنَةِ)</h2><span>60/144</span></div><div id="61"><h2>As-Saff (سُورَةُ الصَّفِّ)</h2><span>61/144</span></div><div id="62"><h2>Al-Jumu'a (سُورَةُ الجُمُعَةِ)</h2><span>62/144</span></div><div id="63"><h2>Al-Munaafiqoon (سُورَةُ المُنَافِقُونَ)</h2><span>63/144</span></div><div id="64"><h2>At-Taghaabun (سُورَةُ التَّغَابُنِ)</h2><span>64/144</span></div><div id="65"><h2>At-Talaaq (سُورَةُ الطَّلَاقِ)</h2><span>65/144</span></div><div id="66"><h2>At-Tahrim (سُورَةُ التَّحۡرِيمِ)</h2><span>66/144</span></div><div id="67"><h2>Al-Mulk (سُورَةُ المُلۡكِ)</h2><span>67/144</span></div><div id="68"><h2>Al-Qalam (سُورَةُ القَلَمِ)</h2><span>68/144</span></div><div id="69"><h2>Al-Haaqqa (سُورَةُ الحَاقَّةِ)</h2><span>69/144</span></div><div id="70"><h2>Al-Ma'aarij (سُورَةُ المَعَارِجِ)</h2><span>70/144</span></div><div id="71"><h2>Nooh (سُورَةُ نُوحٍ)</h2><span>71/144</span></div><div id="72"><h2>Al-Jinn (سُورَةُ الجِنِّ)</h2><span>72/144</span></div><div id="73"><h2>Al-Muzzammil (سُورَةُ المُزَّمِّلِ)</h2><span>73/144</span></div><div id="74"><h2>Al-Muddaththir (سُورَةُ المُدَّثِّرِ)</h2><span>74/144</span></div><div id="75"><h2>Al-Qiyaama (سُورَةُ القِيَامَةِ)</h2><span>75/144</span></div><div id="76"><h2>Al-Insaan (سُورَةُ الإِنسَانِ)</h2><span>76/144</span></div><div id="77"><h2>Al-Mursalaat (سُورَةُ المُرۡسَلَاتِ)</h2><span>77/144</span></div><div id="78"><h2>An-Naba (سُورَةُ النَّبَإِ)</h2><span>78/144</span></div><div id="79"><h2>An-Naazi'aat (سُورَةُ النَّازِعَاتِ)</h2><span>79/144</span></div><div id="80"><h2>Abasa (سُورَةُ عَبَسَ)</h2><span>80/144</span></div><div id="81"><h2>At-Takwir (سُورَةُ التَّكۡوِيرِ)</h2><span>81/144</span></div><div id="82"><h2>Al-Infitaar (سُورَةُ الانفِطَارِ)</h2><span>82/144</span></div><div id="83"><h2>Al-Mutaffifin (سُورَةُ المُطَفِّفِينَ)</h2><span>83/144</span></div><div id="84"><h2>Al-Inshiqaaq (سُورَةُ الانشِقَاقِ)</h2><span>84/144</span></div><div id="85"><h2>Al-Burooj (سُورَةُ البُرُوجِ)</h2><span>85/144</span></div><div id="86"><h2>At-Taariq (سُورَةُ الطَّارِقِ)</h2><span>86/144</span></div><div id="87"><h2>Al-A'laa (سُورَةُ الأَعۡلَىٰ)</h2><span>87/144</span></div><div id="88"><h2>Al-Ghaashiya (سُورَةُ الغَاشِيَةِ)</h2><span>88/144</span></div><div id="89"><h2>Al-Fajr (سُورَةُ الفَجۡرِ)</h2><span>89/144</span></div><div id="90"><h2>Al-Balad (سُورَةُ البَلَدِ)</h2><span>90/144</span></div><div id="91"><h2>Ash-Shams (سُورَةُ الشَّمۡسِ)</h2><span>91/144</span></div><div id="92"><h2>Al-Lail (سُورَةُ اللَّيۡلِ)</h2><span>92/144</span></div><div id="93"><h2>Ad-Dhuhaa (سُورَةُ الضُّحَىٰ)</h2><span>93/144</span></div><div id="94"><h2>Ash-Sharh (سُورَةُ الشَّرۡحِ)</h2><span>94/144</span></div><div id="95"><h2>At-Tin (سُورَةُ التِّينِ)</h2><span>95/144</span></div><div id="96"><h2>Al-Alaq (سُورَةُ العَلَقِ)</h2><span>96/144</span></div><div id="97"><h2>Al-Qadr (سُورَةُ القَدۡرِ)</h2><span>97/144</span></div><div id="98"><h2>Al-Bayyina (سُورَةُ البَيِّنَةِ)</h2><span>98/144</span></div><div id="99"><h2>Az-Zalzala (سُورَةُ الزَّلۡزَلَةِ)</h2><span>99/144</span></div><div id="100"><h2>Al-Aadiyaat (سُورَةُ العَادِيَاتِ)</h2><span>100/144</span></div><div id="101"><h2>Al-Qaari'a (سُورَةُ القَارِعَةِ)</h2><span>101/144</span></div><div id="102"><h2>At-Takaathur (سُورَةُ التَّكَاثُرِ)</h2><span>102/144</span></div><div id="103"><h2>Al-Asr (سُورَةُ العَصۡرِ)</h2><span>103/144</span></div><div id="104"><h2>Al-Humaza (سُورَةُ الهُمَزَةِ)</h2><span>104/144</span></div><div id="105"><h2>Al-Fil (سُورَةُ الفِيلِ)</h2><span>105/144</span></div><div id="106"><h2>Quraish (سُورَةُ قُرَيۡشٍ)</h2><span>106/144</span></div><div id="107"><h2>Al-Maa'un (سُورَةُ المَاعُونِ)</h2><span>107/144</span></div><div id="108"><h2>Al-Kawthar (سُورَةُ الكَوۡثَرِ)</h2><span>108/144</span></div><div id="109"><h2>Al-Kaafiroon (سُورَةُ الكَافِرُونَ)</h2><span>109/144</span></div><div id="110"><h2>An-Nasr (سُورَةُ النَّصۡرِ)</h2><span>110/144</span></div><div id="111"><h2>Al-Masad (سُورَةُ المَسَدِ)</h2><span>111/144</span></div><div id="112"><h2>Al-Ikhlaas (سُورَةُ الإِخۡلَاصِ)</h2><span>112/144</span></div><div id="113"><h2>Al-Falaq (سُورَةُ الفَلَقِ)</h2><span>113/144</span></div><div id="114"><h2>An-Naas (سُورَةُ النَّاسِ)</h2><span>114/144</span></div> */

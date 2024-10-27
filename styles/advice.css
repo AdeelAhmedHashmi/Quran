@@ -1,0 +1,55 @@
+@import url(./main.css);
+@import url(./variables.css);
+@import url(./animation.css);
+
+body{
+    min-height: 100vh;
+    background-color: var(--quran-bg);
+    color: var(--quran-txt);
+}
+header{
+    color: black;
+}
+
+main,section{
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+section{
+    height: 100vh;
+    background-color: var(--quran-bg);
+    color: var(--quran-txt);
+    padding-bottom: 10px;
+}
+.container{
+    height: 200px;
+    width: 250px;
+    border: 5px groove var(--h-bg);
+    display: flex;
+    align-items: center;
+    color: antiquewhite;
+    letter-spacing: 1px;
+    word-break: keep-all;
+    word-spacing: 2px;
+    padding: 10px;
+}
+button{
+    padding: 3px;
+    margin: 30px;
+    border: 2px solid var(--h-bg);
+    border-radius: 5px;
+    background-color: var(--h-bg);
+    color: var(--quran-bg);
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+button:hover{
+    background-color: var(--quran-bg);
+    color: var(--h-bg);
+    border: 2px solid var(--h-bg);
+}

@@ -1,4 +1,7 @@
 const main = document.querySelector('main');
+const loader = document.querySelector('.loader');
+
+
 
 let surah = [];
 const html = main.innerHTML;
@@ -18,6 +21,7 @@ function displayQuran(data,full) {
     surah = [];
 }
 document.querySelector('main .container').addEventListener('click', (e) => {
+    loader.classList.remove('hide');
     main.classList.add('hide');
     quranSec.classList.remove('hide');
     if (e.target.tagName.toUpperCase() == 'H2') {
@@ -30,10 +34,13 @@ document.querySelector('main .container').addEventListener('click', (e) => {
             return response.json();
         })
         .then((data) => {
+            console.log(data);
             displayQuran(data.arabic1,data); 
+            loader.classList.add('hide');
         })
         .catch((error) => {
             console.error('No Internet Connection!');
+            loader.classList.add('hide');
         });
     }
 });

@@ -5,9 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quran App</title>
     <link rel="stylesheet" href="./styles/style.css">
-    <script async src="./scripts/variables.js"></script>
+    <!-- Goolge Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&display=swap" rel="stylesheet">
 </head>
 <body class="dark">
+    <div class="loader hide"></div>
     <header>
         <nav>
             <div class="logo">
@@ -17,117 +21,28 @@
                     <p>Version 1.0.0</p>
                 </span>
             </div>
-            <ul class="nav-menu">
-                <li><a href="./main.html" id="surahBtn">Surahs</a></li>
-                <li><a href="hadish.html">Hadish</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
-            </ul>
-            <div class="menu">
-                <details>
-                    <summary>More</summary>
-                    <div class="options">
-                        <a href="./main.html" id="surahBtn">Surahs</a>
-                        <a href="hadish.html">Hadish</a>
-                        <a href="contact.html">Contact</a>
-                        <a href="about.html">About</a>
-                    </div>
-                </details>
-            </div>
+            <details class="nav-menu">
+                <summary>More</summary>
+                <div class="options">
+                    <a href="./main.html" id="surahBtn">Surahs</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="./advice.html">Advice</a>
+                </div>
+            </details>
         </nav>
     </header>   
 <!-- Surahs  -->
     <main class="dark">
+        <div class="option">
+            <div class="bySurah select">By Surah</div>
+            <div class="bySearch">By Search</div>
+        </div>
         <h1>By Surah</h1>
+        <div class="search hide">
+            <input type="number" id="suranhSearch" min="1" max="144" placeholder="Search by surah number..">
+            <button id="searchBtn">Search</button>
+        </div>
         <div class="container">
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
-            <div id="1">
-                <h2>Fatiha</h2>
-                <span>12/34</span>
-            </div>
         </div>
     </main>
 <!-- Quran Page  -->
@@ -140,7 +55,6 @@
             </div>
             <div class="startsurah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
             <div class="quran">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni neque laboriosam perspiciatis a! Culpa, ex officia est impedit magni repellendus cumque aliquam, neque quae perspiciatis facere laudantium voluptates aliquid quis tempora illo ratione enim illum modi exercitationem. Modi accusamus, aliquam voluptate inventore aliquid maiores delectus quas aperiam sit tempore harum quam cupiditate provident nobis, possimus, consectetur veritatis. Accusamus aspernatur veritatis sit, voluptatum labore ipsa repellat explicabo quas placeat aliquam, porro, quidem ex similique facere eos temporibus. Expedita repudiandae autem maxime quas quisquam eos nobis, exercitationem eveniet ipsa minima dolorem vero dicta nemo illum magni, nulla cupiditate rem cum! Impedit, consequuntur quisquam? Sint, tempora inventore corrupti perferendis quia veritatis. Maiores beatae, voluptas aspernatur quo deleniti quisquam consequatur et ea accusamus aut quos ducimus. Labore hic iste voluptatum vero vitae maxime facilis in, provident ducimus quidem ut ipsam pariatur doloremque laboriosam atque, tempora nostrum. Illo minus rem, a architecto laborum, illum ad, quibusdam blanditiis nulla eum repellendus numquam ab nisi debitis modi sequi cumque eaque! Error autem, culpa natus consectetur ipsam tenetur aliquam molestiae, cum assumenda consequuntur doloremque sunt hic quae eius reiciendis veniam voluptates laborum velit nisi. Laudantium velit totam itaque, ut ipsam nisi dolores praesentium, perferendis dicta sed tenetur non?
             </div>
         </div>
     </section>
