@@ -41,7 +41,8 @@ async function displaySurahList(){
         loader.classList.add('hide');
     }
 }
-displaySurahList();
+// >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// displaySurahList();
 
 // search Filtetr 
 const searchInput = document.querySelector('.search input');
@@ -65,6 +66,7 @@ function searchFilter() {
     searchButton.addEventListener('click',search)
 }
 
+searchFilter()
 const search = document.querySelector('.search');
 const heading = document.querySelector('main h1');
 

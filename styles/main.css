@@ -58,16 +58,7 @@ nav{
     justify-content: space-between;
     padding: 0px 4px;
 }
-nav ul{
-    display: flex;
-    align-items: center;
-    column-gap: 9px;
-}
-nav ul li a{
-    font-size: 0.8rem;
-    font-weight: 700;
-    overflow: hidden;
-}
+
 .logo h4{
     font-size: 0.8rem;
 }
@@ -76,9 +67,6 @@ nav ul li a{
 }
 .logo span{
     line-height: 14px;
-}
-nav  ul li:hover{
-    color: var(--h-hover);
 }
 
 .nav-menu {
@@ -126,6 +114,7 @@ summary:hover{
     position: relative;
     transition: color 0.3s ease;
     width: 100%;
+    transition: all 0.2s linear;
 }
 
 .nav-menu a::after {
@@ -148,8 +137,8 @@ summary:hover{
     white-space: nowrap;
 }
 .nav-menu a:hover {
-    color: var(--h-hover);
-    background-color: #0000001f;
+    color: var(--quran-txt) !important;
+    background-color: var(--quran-bg);
 }
 
 .loader{

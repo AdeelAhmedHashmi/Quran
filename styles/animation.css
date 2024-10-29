@@ -5,7 +5,7 @@
     animation: hide 0.5s ease 1;
 }
 .select{
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--h-bg);
 }
 @keyframes hide {
     from{
