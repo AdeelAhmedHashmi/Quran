@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded',()=>{
     loader.classList.remove('hide');
     setTimeout(()=>{
         loader.classList.add('hide');
-    },4000)
+    },5000)
 })
 
 function displayNames(surahs){
@@ -42,7 +42,7 @@ async function displaySurahList(){
     }
 }
 // >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-// displaySurahList();
+displaySurahList();
 
 // search Filtetr 
 const searchInput = document.querySelector('.search input');
