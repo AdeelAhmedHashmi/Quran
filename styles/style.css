@@ -79,8 +79,9 @@ main .container span{
     border-radius: 0 10px 10px 0
 }
 .quranContainer .quran{
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     color: var(--quran-txt);
+    line-height: 50px;
 }
 
 .search{
@@ -140,4 +141,32 @@ input:focus{
 .option div:hover{
     background-color: var(--quran-bg);
     color: var(--quran-txt);
+}
+
+audio{
+    height: 30px;
+}
+#audio{
+    margin-left: 10px;
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.loading{
+    height: 30px;
+    width: 30px;
+    border: 3px solid #fdae04;
+    border-top: 3px solid transparent;
+    border-radius: 50%;
+    animation: spinner 1s linear infinite;
+    display: inline-block;
+    margin-left: 10px;
+}
+@keyframes spinner {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }

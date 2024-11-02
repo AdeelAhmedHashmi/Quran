@@ -14,6 +14,7 @@
 
 <body class="dark">
     <div class="loader hide"></div>
+    <div class="placeholder">📖</div>
     <header>
         <nav>
             <div class="logo">
@@ -24,11 +25,12 @@
                 </span>
             </div>
             <details class="nav-menu">
-                <summary>More</summary>
+                <summary>☰</summary>
                 <div class="options">
                     <a href="./main.html" id="surahBtn">Surahs</a>
-                    <a href="contact.html">Contact</a>
+                    <a href="./contact.html">Contact</a>
                     <a href="./advice.html">Advice</a>
+                    <a href="./tusbi.html">Tusbi</a>
                 </div>
             </details>
         </nav>
@@ -42,7 +44,7 @@
         <h1>By Surah</h1>
         <div class="search hide">
             <input type="number" id="suranhSearch" min="1" max="144" placeholder="Search by surah number..">
-            <button id="searchBtn">Search</button>
+            <button id="searchBtn">🔎</button>
         </div>
         <div class="container">
 
@@ -56,13 +58,21 @@
                 <div class="name">Al-Fatiha</div>
                 <div class="ayats">23</div>
             </div>
-            <div class="startsurah">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+            <div class="startsurah">
+                <span>بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</span>
+                <span id="audio"> 🔇 </span>
+            </div>
+            <div class="audio hide">
+                <audio controls autoplay src=""></audio>
+                <div class="loading hide"></div>
+            </div>
             <div class="quran">
             </div>
         </div>
     </section>
 </body>
 <script src="scripts/script.js"></script>
+<script src="scripts/audio.js"></script>
 <script src="scripts/fetch.js"></script>
 
 </html>

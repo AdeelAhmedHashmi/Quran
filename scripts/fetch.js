@@ -10,7 +10,6 @@ function displayQuran(data,full) {
     main.innerHTML = html;
     main.classList.add('hide');
     quranSec.classList.remove('hide');
-    console.log(full);
     data.forEach(ayat => {
         surah.push(ayat + '  ۝');
     });
@@ -26,6 +25,7 @@ document.querySelector('main .container').addEventListener('click', (e) => {
     quranSec.classList.remove('hide');
     if (e.target.tagName.toUpperCase() == 'H2') {
         const h2 = e.target;
+        fetchAudio(h2.parentNode.id);
         fetch(`https://quranapi.pages.dev/api/${h2.parentNode.id}.json`)
         .then((response) => {
             if (!response.ok) {
@@ -34,7 +34,6 @@ document.querySelector('main .container').addEventListener('click', (e) => {
             return response.json();
         })
         .then((data) => {
-            console.log(data);
             displayQuran(data.arabic1,data); 
             loader.classList.add('hide');
         })

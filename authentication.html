@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication | Quran Heaven</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/authentication.css">
+    <link rel="stylesheet" href="./styles/contact.css">
+    <script type="module" defer src="./backend/main.js"></script>
+</head>
+<body class="dark">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./images/logo.png" alt="Quran" height="40">
+                <span>
+                    <h4>Quran-App</h4>
+                    <p>Version 1.0.0</p>
+                </span>
+            </div>
+            <details class="nav-menu">
+                <summary>More</summary>
+                <div class="options">
+                    <a href="./main.html" id="surahBtn">Surahs</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="./advice.html">Advice</a>
+                </div>
+            </details>
+        </nav>
+    </header>
+    <main>
+        <div class="contactform">
+            <form method="POST">
+                <input type="hidden" name="access_key" value="68a21d50-4996-487f-8ee6-17db05232322">
+                <div class="username">
+                    <label for="name">enter your name</label>
+                    <input id="name" title="username" name="name" type="text" required autocomplete="off">
+                </div>
+                <div class="email">
+                    <label for="email">enter your email</label>
+                    <input id="email" title="useremail" name="email" type="text" required>
+                </div>
+                <div class="submit">
+                    <button id="submit" title="submit" name="submit" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

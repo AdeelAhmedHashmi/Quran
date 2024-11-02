@@ -6,12 +6,12 @@ const surahName = document.querySelector('.surahinfo .name');
 const totalayats = document.querySelector('.surahinfo .ayats');
 const surahBtn = document.querySelector('#surahBtn');
 
-document.addEventListener('DOMContentLoaded',()=>{
-    loader.classList.remove('hide');
-    setTimeout(()=>{
-        loader.classList.add('hide');
-    },5000)
-})
+// document.addEventListener('DOMContentLoaded',()=>{
+    //     loader.classList.remove('hide');
+//     setTimeout(()=>{
+//         loader.classList.add('hide');
+//     },5000)
+// })
 
 function displayNames(surahs){
     surahs.forEach(data => {        
@@ -96,5 +96,7 @@ bySurah.addEventListener('click',()=>{
         surah.classList.remove('hide');
     })
 })
+
+
 
 
