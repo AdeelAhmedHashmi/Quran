@@ -162,11 +162,87 @@ audio{
     display: inline-block;
     margin-left: 10px;
 }
+#signinForm{
+    background-color: rgba(0, 0, 0, 0.603);
+    height: 2300vh;
+    width: 100vw;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+}
+#signinForm *{
+    overflow: hidden;
+}
+#signinForm form{
+    border-radius: 3%;
+    box-shadow:0px 1px 20px 6px black;
+    width: 280px;
+    height: 300px;
+    background-color: var(--main-txt);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    padding: 20px;
+    gap: 20px;
+    row-gap: 10px;
+    animation: appear 1s 1 ease;
+    h1{
+        font-weight: 900;
+        text-align: center;
+        font-size: 3rem;
+    }
+    p{
+        color: rgb(4, 105, 145);
+        font-size: 0.9rem;
+        margin-bottom: 30px;
+    }
+    .optionAccount{
+        border-radius: 10px;
+        background-color: #0000003f;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+        padding: 10px;
+        gap: 10px;
+        cursor: pointer;
+        svg{
+            width: 25%;
+        }
+        div p{
+            font-size: 0.9rem;
+            color: white;
+            margin-bottom: 0;
+        }
+    }
+    .app{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 10px;
+    }
+}
 @keyframes spinner {
     0%{
         transform: rotate(0deg);
     }
     100%{
         transform: rotate(360deg);
+    }
+}
+
+@keyframes appear {
+    0%{
+        opacity: 0;
+        translate: 0px -10px;
+    }
+    100%{
+        opacity: 1;
     }
 }

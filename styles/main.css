@@ -158,7 +158,7 @@ summary:hover{
 
 .placeholder{
     position: absolute;
-    font-size: 8rem;
+    font-size: 20rem;
     z-index: -1;
     top: 55vh;
     left: 50vw;

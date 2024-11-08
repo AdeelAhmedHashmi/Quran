@@ -5,6 +5,7 @@ const state = document.querySelector('.surahinfo .state');
 const surahName = document.querySelector('.surahinfo .name');
 const totalayats = document.querySelector('.surahinfo .ayats');
 const surahBtn = document.querySelector('#surahBtn');
+const signForm = document.querySelector('#signinForm');
 
 // document.addEventListener('DOMContentLoaded',()=>{
     //     loader.classList.remove('hide');
@@ -12,6 +13,15 @@ const surahBtn = document.querySelector('#surahBtn');
 //         loader.classList.add('hide');
 //     },5000)
 // })
+let UserState = localStorage.getItem('account') || false;
+
+if(UserState == 'false'){
+    signForm.classList.remove('hide');
+    document.body.style.overflow = 'hidden';
+}else{
+    signForm.classList.add('hide');
+    document.body.style.overflow = 'auto';
+}
 
 function displayNames(surahs){
     surahs.forEach(data => {        
@@ -96,7 +106,5 @@ bySurah.addEventListener('click',()=>{
         surah.classList.remove('hide');
     })
 })
-
-
 
 

@@ -1,0 +1,57 @@
+
+
+
+
+
+//    Manage DataBase 
+console.log(DB);
+
+function addData(data) {
+const newRef = push(ref(DB, 'users')); // Create a new unique reference in 'users'
+set(newRef, data) // Write data to the generated reference
+    .then(() => console.log('Data added successfully'))
+    .catch(error => console.error('Error adding data:', error));
+}
+
+function getData(id) {
+get(ref(DB, `users/${id}`))
+    .then(snapshot => {
+        if (snapshot.exists()) {
+            console.log('Data retrieved:', snapshot.val());
+            return snapshot.val();
+        } else {
+            console.log('No data found');
+        }
+    })
+    .catch(error => console.error('Error retrieving data:', error));
+}
+
+function getAllData() {
+const dataRef = ref(database, 'users');
+onValue(dataRef, snapshot => {
+    const data = snapshot.val();
+    if (data) {
+        console.log('All data:', data);
+        return data;
+    } else {
+        console.log('No data available');
+    }
+});
+}
+
+function updateData(id, updates) {
+update(ref(DB, `users/${id}`), updates)
+    .then(() => console.log('Data updated successfully'))
+    .catch(error => console.error('Error updating data:', error));
+}
+
+function deleteData(id) {
+remove(ref(DB, `users/${id}`))
+    .then(() => console.log('Data deleted successfully'))
+    .catch(error => console.error('Error deleting data:', error));
+}
+
+
+
+addData({name:'adeel',id: 23});
+
