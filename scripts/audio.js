@@ -1,8 +1,8 @@
-const url = "http://api.alquran.cloud/v1/surah/1/ar.alafasy"
+const url = "https://api.alquran.cloud/v1/surah/1/ar.alafasy"
 let audioUrls = [];
 
 function fetchAudio(surahNo) {
-    fetch(`http://api.alquran.cloud/v1/surah/${surahNo}/ar.alafasy`)
+    fetch(`https://api.alquran.cloud/v1/surah/${surahNo}/ar.alafasy`)
     .then(response => response.json())
     .then(data => {
         let ayahs = data.data.ayahs;
